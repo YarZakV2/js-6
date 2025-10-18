@@ -764,6 +764,6 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "message", ()=>message);
 const message = "Parcel";
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequire2620", {})
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequire94c2", {})
 
 //# sourceMappingURL=js-6.31b563d9.js.map
