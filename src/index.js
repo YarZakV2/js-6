@@ -1,8 +1,9 @@
-import { add } from "./modules/math.js";
-import { message } from "./modules/message.js";
+import { hello } from "./modules/message.js";
+import { sum } from "./modules/math.js";
 
-console.log(message);
-console.log("2 + 3 =", add(2, 3));
+hello();
 
-document.body.innerHTML = `<h1>${message}</h1><p>2 + 3 = ${add(2, 3)}</p>`;
 
+const output = document.createElement("p");
+output.textContent = `2 + 3 = ${sum(2, 3)}`;
+document.body.appendChild(output);

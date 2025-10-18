@@ -207,11 +207,11 @@
       });
     }
   }
-})({"5j6Kf":[function(require,module,exports,__globalThis) {
+})({"cxs9Q":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 1234;
+var HMR_SERVER_PORT = 63014;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -714,18 +714,19 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"a0t4e":[function(require,module,exports,__globalThis) {
-var _mathJs = require("./modules/math.js");
 var _messageJs = require("./modules/message.js");
-console.log((0, _messageJs.message));
-console.log("2 + 3 =", (0, _mathJs.add)(2, 3));
-document.body.innerHTML = `<h1>${0, _messageJs.message}</h1><p>2 + 3 = ${(0, _mathJs.add)(2, 3)}</p>`;
+var _mathJs = require("./modules/math.js");
+(0, _messageJs.hello)();
+const output = document.createElement("p");
+output.textContent = `2 + 3 = ${(0, _mathJs.sum)(2, 3)}`;
+document.body.appendChild(output);
 
-},{"./modules/math.js":"4eeek","./modules/message.js":"bpPRr"}],"4eeek":[function(require,module,exports,__globalThis) {
+},{"./modules/message.js":"bpPRr","./modules/math.js":"4eeek"}],"bpPRr":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "add", ()=>add);
-function add(a, b) {
-    return a + b;
+parcelHelpers.export(exports, "hello", ()=>hello);
+function hello() {
+    console.log("Parcel \u043F\u0440\u0430\u0446\u044E\u0454!");
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jnFvT":[function(require,module,exports,__globalThis) {
@@ -758,12 +759,14 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"bpPRr":[function(require,module,exports,__globalThis) {
+},{}],"4eeek":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "message", ()=>message);
-const message = "Parcel";
+parcelHelpers.export(exports, "sum", ()=>sum);
+function sum(a, b) {
+    return a + b;
+}
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequire94c2", {})
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["cxs9Q","a0t4e"], "a0t4e", "parcelRequire2620", {})
 
 //# sourceMappingURL=js-6.31b563d9.js.map
